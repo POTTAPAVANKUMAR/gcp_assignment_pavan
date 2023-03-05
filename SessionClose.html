@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Chat Session Closed</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+      html, body {
+        height: 100%;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+      }
+      form {
+        border: 5px solid #f1f1f1;
+        padding: 20px;
+        max-width: 600px;
+        width: 100%;
+        text-align: center;
+      }
+      .icon {
+        margin-bottom: 30px;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      button {
+        background-color: #4286f4;
+        color: white;
+        padding: 14px 0;
+        margin: 10px 0;
+        border: none;
+        cursor: pointer;
+        width: 48%;
+      }
+      button:hover {
+        opacity: 0.8;
+      }
+  </style>
+</head>
+<body>
+  <form>
+    <h1>Chat Session Closed</h1>
+    <div class="icon">
+      <img src="ChatClosed.jpg" alt="Chat Closed">
+    </div>
+    <div class="container">
+      <label><strong>Hope your questions are answered!</strong></label>
+    </div>
+    <button type="button" class="btn btn-primary" onclick="window.close();">Close Window</button>
+  </form>
+</body>
+</html>

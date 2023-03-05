@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+          <form action="{{url_for('startinquiry')}}" method="POST">
+            <h1 class="text-center mb-4">College Inquiry Chatbot</h1>
+            <div class="icon d-flex justify-content-center mb-4">
+              <i class="fas fa-user-circle fa-5x"></i>
+            </div>
+            <div class="form-group">
+              <label for="ufname"><strong>Firstname</strong></label>
+              <input type="text" class="form-control" placeholder="Enter Firstname" name="ufname" required>
+            </div>
+            <div class="form-group">
+              <label for="ulname"><strong>Lastname</strong></label>
+              <input type="text" class="form-control" placeholder="Enter Lastname" name="ulname" required>
+            </div>
+            <div class="form-group">
+              <label for="mail"><strong>E-mail</strong></label>
+              <input type="email" class="form-control" placeholder="Enter E-mail" name="mail" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block"><strong>START INQUIRY</strong></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  </body>
+</html>
